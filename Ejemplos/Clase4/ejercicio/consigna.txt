@@ -1,0 +1,5 @@
+Ejercicio
+Una empresa cuenta con empleados, estos pueden ser de distintas areas (IT, RRHH, etc), cada area tiene distintos rangos de sueldo que estan previamente definidos.
+Cada area tiene asignada un piso y los empleados solo tienen acceso a dicho piso con su tarjeta de ingreso/egreso.
+El ingreso es unicamente en horario laboral, se puede ingresar de 7 a 20hs y se puede retirar de 7 a 20 horas.
+En caso de que sean mas de las 20 horas, se podrá retirar unicamente con previa aprobación.
