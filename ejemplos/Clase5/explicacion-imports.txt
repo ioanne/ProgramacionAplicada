@@ -1,0 +1,5 @@
+Importaciones relativas
+    A partir de donde estamos parados
+
+Importaciones Absolutas
+    A partir de un archivo en particular, lo mas afuera posible.

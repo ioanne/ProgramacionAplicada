@@ -5,6 +5,10 @@ from validar_ingreso import ValidarAcceso
 
 
 class Empleado:
+    @classmethod
+    def validar_sueldo(cls, sueldo):
+        pass
+
     def __init__(
         self, nombre, horario_entrada: time, horario_salida: time, sueldo: float
     ):
@@ -13,18 +17,14 @@ class Empleado:
         self.horario_salida = horario_salida
         self.sueldo = sueldo
 
-
-class EmpleadoIT(Empleado):
-    area = Area("Tecnología", (100000, 1000000), 15)
-
-    def __init__(
-        self, nombre, horario_entrada: time, horario_salida: time, sueldo: float
-    ):
-        super().__init__(nombre, horario_entrada, horario_salida, sueldo)
         if self.validar_sueldo(sueldo):
             self.sueldo = sueldo
         else:
             raise Exception
+
+
+class EmpleadoIT(Empleado):
+    area = Area("Tecnología", (100000, 1000000), 15)
 
     @classmethod
     def validar_sueldo(cls, sueldo: float) -> bool:
