@@ -1,0 +1,47 @@
+Obtener datos de:
+    - (BD) Bases de datos relacionales
+    - (BD) Bases de datos no relacionales
+    - API (Application Progamming interface)
+    - Archivos de texto
+    - Excel
+    - QR
+
+
+Escribir datos:
+    - (BD) Bases de datos relacionales
+    - (BD) Bases de datos no relacionales
+    - API (Application Progamming interface) Microservicios u otros servicios
+    - Archivos de texto
+    - Excel
+    - QR
+
+
+Seguridad:
+    - Seguridad de los datos
+        - Integridad
+            - Los datos tienen que ser correctos y no deben haber sido modificados
+        - Autenticidad
+            - Los datos deben ser genuinos y no falsificados
+        - Confidencialidad
+            - No revelar datos a personas que no tengan autorización / revelar datos a quien corresponda
+                - Encriptando (por medio de clave publica/privada)
+                - Control de acceso (usuario y contraseña)
+        - Disponibilidad
+            - Los datos tienen que estar disponibles siempre que se los necesite
+        - Autorización
+            - Los datos tienen que estar disponibles solo para las personas que tengan autorización
+    - Autenticación
+    - Autorización
+    - Encriptación / Desencriptación
+    - Protocolos seguros (HTTPS, SSH, etc)
+    - Uso de Frameworks o librerías
+    - Consultas parametrizadas (borrar caracteres especiales)
+
+
+Big Data (Apache Airflow)
+
+1. Obtener datos de BD
+2. Desnormalizarlos a una fecha especifica generando otra base de datos o excel
+3. Importar los datos en Power BI o Data Studio 
+4. Generar graficos y demas
+

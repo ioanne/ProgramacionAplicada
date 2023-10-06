@@ -1,0 +1,47 @@
+
+
+Disponibilizas recursos a traves de un endpoint y se accede a traves de un metodo
+
+List a new item.
+POST
+/items
+
+Retrieves the information of an item
+GET
+/items/:id
+
+Update an item.
+PUT
+/items/:id
+
+Retrieve item description
+GET
+/items/:id/description
+
+
+Get variations of an item
+GET
+/items/:id/variations
+
+
+Get a specific variation of the item
+GET
+/items/:id/variations/:variation_id
+
+
+Update the variation
+PUT
+/items/:id/variations/:variation_id
+
+Delete a variation
+DELETE
+/items/:id/variations/:variation_id
+
+Ej:
+/items/MLA1234
+
+Retrieves the information of a list of items
+GET
+/items?ids=:ids
+Ej:
+/items?ids=MLA1232,MLA1233,MLA1234
