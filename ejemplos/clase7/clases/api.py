@@ -47,7 +47,9 @@ class MercadoLibreAPI:
 
     def filter_products(self, products=None, start_price=None, end_price=None):
         """
-        Start price y end price son obligatorios ambos"""
+        Start price y end price son obligatorios ambos
+        Hay que mejorar los elif.
+        """
         # Genero una copia profunda de la lista de productos
         filtered_products = []
         products = self.products if products is None else products
@@ -66,6 +68,7 @@ class MercadoLibreAPI:
         return filtered_products
 
     def has_attr(self, producto, attr_name, attr_value):
+        """Esto va dentro de Item"""
         # Esto ya no es un diccionario, ahora es un objeto.
         for atributo in producto.get("attributes", []):
             has_attr_name = atributo.get("name").lower() == attr_name.lower()
