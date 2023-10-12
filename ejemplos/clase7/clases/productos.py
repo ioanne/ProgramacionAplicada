@@ -125,3 +125,14 @@ class Shipping:
 
 # a = Item(diccionario)
 # print(a)
+
+from pydantic import BaseModel
+
+
+class Character(BaseModel):
+    name: str
+    last_name: str
+    phone: int
+
+
+character_dict = {"name": "Rick", "last_name": "Sanchez", "phone": 12345675}
