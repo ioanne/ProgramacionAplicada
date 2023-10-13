@@ -63,6 +63,10 @@ class RickAndMortyAPI:
         """Obtener un personaje por nombre parcial. Si hay mas de 1 deben dar error. (raise)"""
         pass
 
+    def get_characters_by_name(self, name: str) -> list[Character] | None:
+        """Obtener un personaje por nombre parcial."""
+        pass
+
     def get_episode_by_name(self, name: str):
         """Obtener un episodio por nombre parcial ('Epi' in episode). Si hay mas de 1 deben dar error. (raise)"""
         pass
