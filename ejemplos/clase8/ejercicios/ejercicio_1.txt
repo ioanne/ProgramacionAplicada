@@ -1,0 +1,8 @@
+1) Obtener todos los episodios de rick and morty. Mostrarlos de forma elegante.
+2) Obtener todos los locations de rick and morty. Mostrarlos de forma elegante.
+3) Crear clase Episode con sus atributos para poder inicializar con un diccionario.
+4) Obtener episodio por ID.
+5) Obtener episodio por nombre.
+6) Listar que personajes estuvieron en un episodio en particular.
+7) En el main mostrar todo lo anterior en forma de objeto
+8) Refactorizar el código anterior creando una o multiples clases para tener todo el código ordenado. En main_classs.py

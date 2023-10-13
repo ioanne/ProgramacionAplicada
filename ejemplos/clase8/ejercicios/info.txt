@@ -1,0 +1,21 @@
+Endpoints rick and morty
+
+https://rickandmortyapi.com/api/
+
+Para obtener todos los personajes:
+https://rickandmortyapi.com/api/character
+
+Para obtener un único personaje:
+https://rickandmortyapi.com/api/character/1
+
+Para obtener todos los location:
+https://rickandmortyapi.com/api/location
+
+Para obtener un único location:
+https://rickandmortyapi.com/api/location/1
+
+Para obtener todos los episode
+https://rickandmortyapi.com/api/episode
+
+Para obtener un único episode
+https://rickandmortyapi.com/api/episode/1
