@@ -34,6 +34,7 @@ class RickAndMortyAPI:
         return data
 
     def _fetch(self, resource):
+        """Obtenemos el recurso de la API y lo devolvemos como JSON."""
         response = requests.get(resource)
         if response.ok:
             return response.json()
@@ -115,6 +116,10 @@ class RickAndMortyAPI:
 
     def get_episode_by_name(self, name: str):
         """Obtener un episodio por nombre parcial ('Epi' in episode). Si hay mas de 1 deben dar error. (raise)"""
+        # Obtener episodio por nombre
+        # Si hay más de uno tirar error
+        # El error tiene que ser personalizado
+        # Si hay solo 1 devolverlo.
         pass
 
     def get_characters_on_episode(self, episode_id: int):
