@@ -39,6 +39,24 @@ class RickAndMortyAPI:
         if response.ok:
             return response.json()
 
+    @property
+    def characters(self):
+        # Patron de diseño singleton
+        if hasattr(RickAndMortyAPI, "_characters"):
+            print("Cache")
+            return RickAndMortyAPI._characters
+        print("Get data from API")
+        RickAndMortyAPI._characters = self.get_characters()
+        return RickAndMortyAPI._characters
+
+    @property
+    def locations(self):
+        return self.get_locations()
+
+    @property
+    def episodes(self):
+        return self.get_episodes()
+
     def _search_resource_by(self, resources, _type, _value):
         new_resource = None
         for resource in resources:

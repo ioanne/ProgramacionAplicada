@@ -58,3 +58,49 @@ finally:
 # Instanciamos la API
 # Le pedimos los datos
 # Instanciamos la clase en base a los datos
+
+
+import time
+
+
+class TakeTime:
+    def __init__(self):
+        self.start = time.time()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        self.end = time.time()
+        self.secs = self.end - self.start
+        self.msecs = self.secs * 1000  # millisecs
+        print(f"elapsed time: {self.msecs} ms")
+
+
+with TakeTime() as t:
+    api.get_characters()
+    api.get_characters()
+    api.get_characters()
+
+print("time 2")
+with TakeTime() as t:
+    api_1 = RickAndMortyAPI()
+    api_1.characters
+
+with TakeTime() as t:
+    api_2 = RickAndMortyAPI()
+    api_2.characters
+
+    api_3 = RickAndMortyAPI()
+    api_3.characters
+
+
+# with TakeTime() as t:
+#     api.get_episodes()
+#     api.get_episodes()
+#     api.get_episodes()
+
+# with TakeTime() as t:
+#     api.get_locations()
+#     api.get_locations()
+#     api.get_locations()
