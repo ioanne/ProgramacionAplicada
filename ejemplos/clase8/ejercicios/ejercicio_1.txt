@@ -8,3 +8,24 @@
 8) Listar que personajes estuvieron en un episodio en particular.
 9) En el main mostrar todo lo anterior en forma de objeto
 10) Refactorizar el código anterior creando una o multiples clases para tener todo el código ordenado. En main_classs.py
+
+
+spike = Me pongo a jugar = Analisis
+Diseño (bajada a tierra)
+    Descripcion
+    Criterios de aceptacion (que tenemos que cumplir)
+    Estimacion
+
+    Epica (proyecto)
+        Issues / Spikes / tasks
+        bugs
+
+MVP
+
+Desarrollo de producto 
+
+
+10) 
+Analizar el código
+Corregir lo que hicimos mal o no nos gusta
+Aplicar cambios
